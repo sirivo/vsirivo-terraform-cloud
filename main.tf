@@ -35,7 +35,7 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "HelloWorld"
-    owner="terraform-cloud"
+    owner="terraform-cloud-${count.index}"
 
   }
 }
